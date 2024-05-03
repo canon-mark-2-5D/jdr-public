@@ -1,2 +1,2 @@
-# jdr-pubilc
+# jdr-public
 jdr
