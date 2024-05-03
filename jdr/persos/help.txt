@@ -1,0 +1,29 @@
+liste des commendes 
+ortographe corect non fournie 
+
+dé-roll
+-> fait un lancer de dé  avec un nombre  entré  
+
+
+fiche-perso
+-> afiche la fiche perso  
+
+l'avent dernier nombres est le nombre de pv de basse est le dernier est selui actuel
+
+
+traget 
+-> permet de se déplacer  de ville en ville 
+
+pour se déplacer vérifier que les 2 ville soit bien  relier sur la carte  si non relier 
+ passé par une ville qui est entre votre destination 
+
+ps( bug non fixé  donc si un 5 est présent dans la liste de nombres qui est afichier 
+sé le signe d'une embuscade) 
+
+
+
+degat
+->    pour se retier des pv ex si vous vous prenez  4 dégat écrivé 4 
+
+
+

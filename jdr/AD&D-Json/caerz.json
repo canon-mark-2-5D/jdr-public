@@ -1,0 +1,8 @@
+{
+    "ville1": "./AD&D-Json/place-Madrid.json",
+    "ville2": "./AD&D-Json/place-Lorge.json",
+    "ville3": "./AD&D-Json/place-London.json",
+    "ville4": "./AD&D-Json/place-long.json",
+    "ville5": "./AD&D-Json/place-Paris.json",
+    "ville6": "./AD&D-Json/place-petit.json"
+}
