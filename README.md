@@ -18,6 +18,4 @@ Pour vos parties de **jdr**
 
 Aprés avoir installé Python, executez:
 
-```cmd
-run 
-```
+ipijijijijji.py
