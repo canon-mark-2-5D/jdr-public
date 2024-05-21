@@ -13,7 +13,19 @@ Pour vos parties de **jdr**
       src="https://img.shields.io/badge/Language-Python-purple"
   />
 </p>
+  <a href="./LICENSE">
+      <img
+        alt="compabilité:🪟 windows ☑️ "
+        src="https://img.shields.io/badge/License-GPL-blue"
+      />
+  </a>
 
+  <a href="./LICENSE">
+      <img
+        alt="compabilité: linux 📋 idk "
+        src="https://img.shields.io/badge/License-GPL-blue"
+      />
+  </a>
 # Comment demarrer 
 
 Aprés avoir installé Python, executez:
