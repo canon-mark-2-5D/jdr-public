@@ -16,16 +16,17 @@ Pour vos parties de **jdr**
   <a href="./LICENSE">
       <img
         alt="compabilité:🪟 windows ☑️ "
-        src="https://img.shields.io/badge/Compabilité-windows-blue"
+        src="https://img.shields.io/badge/Compabilité-windows☑-blue"
       />
   </a>
-n
+<h></h>
   <a href="./LICENSE">
       <img
         alt="compabilité: linux 📋 idk "
-        src="https://img.shields.io/badge/Compabilité-linux-blue"
+        src="https://img.shields.io/badge/Compabilité-linux❌-blue"
       />
-  </a>
+  </a>   
+<h></h>
 # Comment demarrer 
 
 Aprés avoir installé Python, executez:
