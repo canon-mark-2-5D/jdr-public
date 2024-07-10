@@ -1,4 +1,7 @@
 import json
+import logging 
+logger = logging.getLogger(__name__)
+logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
 def fichepeso():
   with open("./persos/ficheperso.json", "r") as f:
    data = json.load(f)

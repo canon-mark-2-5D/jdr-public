@@ -1,0 +1,18 @@
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Users\diazf\Music\jdr\ipijijijijji.py", line 21, in roll
+    nombre = int(input(()))
+             ^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'oijli'
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Users\diazf\Music\jdr\ipijijijijji.py", line 21, in roll
+    nombre = int(input(()))
+             ^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'nicolas'
+ERROR:root:
+Traceback (most recent call last):
+  File "C:\Users\diazf\Music\jdr\ipijijijijji.py", line 21, in roll
+    nombre = int(input(()))
+             ^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'd'

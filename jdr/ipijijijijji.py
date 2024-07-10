@@ -8,17 +8,23 @@ print("  ▒   ▒▒ ░░▒ ░       ░ ▒ ▒░   ░  ▒     ▒   �
 print("  ░   ▒   ░░       ░ ░ ░ ▒  ░          ░   ▒     ░ ░   ▒ ▒ ░░  ░░       ░  ░  ░     ░    ░ ░     ░░   ░   ░   ▒      ░   ░ ░ ░        ")
 print("      ░  ░             ░ ░  ░ ░            ░  ░    ░  ░░ ░                    ░     ░  ░          ░           ░  ░         ░ ░ ░      ")
 print("                            ░                          ░ ░                                                                   ░        ")
-print('pour aficher les commende  tapé commende-help')
+print('pour afficher les commendes  tapées commende-help')
 import random
 import os 
+import logging 
+logger = logging.getLogger(__name__)
+logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
 etat = 0
 def roll(): # lancer de dé ps penssé a metre une sécurité  pour les génie comme nicola qui mette des nombre negatif  bref les petit flan portugay c'est bon ^_~
+ try :  
    print("entré  quel type de dé a émuler ex: dé 20")
    nombre = int(input(()))
    global dé        
    dé = random.randint(1,nombre)
    print(dé)
-
+ except:
+  logging.exception('')
+  pass
 
 
 
@@ -94,9 +100,15 @@ def nanjur():
   print('')
   print(' carte-afiche')
   print('commende pour ouvrir une feneitre avec la carte aficher')
+  print('')
+  print(' lien-github')
+  print('dit dans le nom')
+ elif s == 'lien-github':
+  from testweb import weblien
+  weblien()
 
  elif s == "carte-afiche":
   from afichecart import afiche
   afiche()
-while  etat == 0:
+while  etat  == 0:
  nanjur()

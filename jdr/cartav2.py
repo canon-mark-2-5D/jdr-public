@@ -1,6 +1,8 @@
 import random
 import json
-
+import logging 
+logger = logging.getLogger(__name__)
+logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
 def lacarta():
  with open("./AD&D-Json/caerz.json", "r") as f:
    data = json.load(f)
@@ -59,33 +61,37 @@ def roll(): # lancer de dé
 distance()
 
 def deplacementt():
- print('destination:')
- h = input() 
- if h == place1:
-   distancekm = distance1
- elif h == place2:
-   distancekm = distance2
- elif h == place3:
-   distancekm = distance3
- else:
-   print('destination non atégnable ou non existante')
-   return
+ try:
+  print('destination:')
+  h = input() 
+  if h == place1:
+    distancekm = distance1
+  elif h == place2:
+    distancekm = distance2
+  elif h == place3:
+    distancekm = distance3
+  else:
+    print('destination non atégnable ou non existante')
+    return
 
- print('trage de',nomposition ,'a',h,'distence',distancekm,"km")
- rest = int(distancekm )
- rast = 0
- embuscade = (0)
- while rest > rast:
-  rast =(rast +1)
-  roll()
-  if dé == 5:
-   embuscade = (embuscade + 1)
- print(embuscade)
- if embuscade > 1:
-  print('rencontre hostille')
- embuscade = 0
- with open("./persos/ficheperso.json", "r") as ff:
-  ata = json.load(ff)
-  ata["posistion"] = h  # Modifie une valeur existante
-  with open('./persos/ficheperso.json', 'w') as fw:
-   json.dump(ata, fw, indent=4)  # Indentation de 4 pour une meilleure lisibilité
+  print('trage de',nomposition ,'a',h,'distence',distancekm,"km")
+  rest = int(distancekm )
+  rast = 0
+  embuscade = (0)
+  while rest > rast:
+   rast =(rast +1)
+   roll()
+   if dé == 5:
+    embuscade = (embuscade + 1)
+  print(embuscade)
+  if embuscade > 1:
+   print('rencontre hostille')
+  embuscade = 0
+  with open("./persos/ficheperso.json", "r") as ff:
+   ata = json.load(ff)
+   ata["posistion"] = h  # Modifie une valeur existante
+   with open('./persos/ficheperso.json', 'w') as fw:
+    json.dump(ata, fw, indent=4)  # Indentation de 4 pour une meilleure lisibilité
+ except:
+  logging.exception('')
+  pass
