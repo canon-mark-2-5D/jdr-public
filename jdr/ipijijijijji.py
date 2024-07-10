@@ -10,7 +10,6 @@ print("      ░  ░             ░ ░  ░ ░            ░  ░    ░  �
 print("                            ░                          ░ ░                                                                   ░        ")
 print('pour afficher les commendes  tapées commende-help')
 import random
-import os 
 import logging 
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
@@ -103,9 +102,16 @@ def nanjur():
   print('')
   print(' lien-github')
   print('dit dans le nom')
+  print("host")
+  print('ouvre un serveur commme maitre du jeux')
  elif s == 'lien-github':
   from testweb import weblien
   weblien()
+ elif s == "host":
+  from host import host
+  host()
+  
+
 
  elif s == "carte-afiche":
   from afichecart import afiche
