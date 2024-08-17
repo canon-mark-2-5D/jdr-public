@@ -23,6 +23,16 @@ def host():
         file = open(lien1)
         x = file.read()
         client.send(x.encode("utf-8"))
+     elif message == '/chat':
+       etat = 0
+       def msg():
+          x = input(" ")
+          client.send(x.encode("utf-8"))
+       if message == "stop":
+         etat = 1
+       while  etat  == 0:
+         msg()
+        
      else:       
        client.send("Message reçu".encode("utf-8"))
    print("Connexion fermée avec " + adresseIP + ":" + port)

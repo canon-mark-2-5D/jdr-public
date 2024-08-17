@@ -39,24 +39,23 @@ def fichepeso():
    pvbasse =(data["pvbasse"])
    global pvréele
    pvréele =(data["pvreele"])
-ficheenemi()
-fichepeso()
-def combat():   
+
+def comba():   
 
   pvnow = pvréele
   pvnow1 = pvréele1
   while pvnow and pvnow1 > 0:
     a =str(pvnow)
     b =str(pvnow1)
-    print("pv ", a)
-    print('pv adverse ', b)
     print('list attaque')
     print("1 -> balle normal")
     print("2 -> balle expencive")
     print("3 -> sabre")
+    print("pv ", a)
+    print('pv adverse ', b)
 
-    s = int(input('> entré le numéro de votre attaque'))
     try:
+      s = int(input('> entré le numéro de votre attaque'))
       if s == 1:
         attaqueper = random.randint(1,10)
       elif s == 2:
@@ -64,14 +63,15 @@ def combat():
       elif s == 3:
         h = random.randint(1,20)
         attaqueper = (h - 5)
+
+      pvnow1 =(pvnow1 - attaqueper)
+      print('dégat fait ')
+      print(attaqueper)
+      dé1 = random.randint(1,10)
+      pvnow = (pvnow - dé1)
+      print('dégat prie')
+      print(dé1)
     except:
+      pass
       logging.exception('')
-    pvnow1 =(pvnow1 - attaqueper)
-    print('dégat fait ')
-    print(attaqueper)
-    dé1 = random.randint(1,10)
-    pvnow = (pvnow - dé1)
-    print('dégat prie')
-    print(dé1)
-  print('win')
-combat()
+    print('win')
